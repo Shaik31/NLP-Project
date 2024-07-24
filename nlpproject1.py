@@ -63,7 +63,7 @@ if pre:
 import pandas as pd
 import streamlit as st
 import time
-from sklearn.feature_extraction.text import CountVectorizer
+#from sklearn.feature_extraction.text import CountVectorizer
 import pickle
 import cleantext
 
