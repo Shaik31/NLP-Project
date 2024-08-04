@@ -15,9 +15,9 @@ def get_requirements(file_path:str)->List[str]:
     return requirements
 
 setup(
-    name="Reliance Stock Market Prediction",
+    name="NLP Project Sentimental analysis",
     version=1.0,
-    author="Rajveer Singh",
+    author="Shaik Abdul Khadar",
     packages=find_packages(),
     install_requires = get_requirements('requirements.txt')
 )
