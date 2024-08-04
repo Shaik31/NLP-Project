@@ -5,6 +5,8 @@ import time
 #from sklearn.feature_extraction.text import CountVectorizer
 import pickle
 #import cleantext
+from afinn import Afinn
+afinn = Afinn()
 
 # Suppress warnings (if any)
 import warnings
@@ -17,8 +19,8 @@ with open('log_mod_nlp.pkl', 'rb') as model_file:
 with open('count_vectorizer.pkl', 'rb') as cv_file:
     cv = pickle.load(cv_file)
 
-with open('afinn_score.pkl', 'rb') as afinn_file:
-    afinn = pickle.load(afinn_file)
+#with open('afinn_score.pkl', 'rb') as afinn_file:
+    #afinn = pickle.load(afinn_file)
 
 def get_sentiment_label_color(sentiment_score):
     if sentiment_score > 0:
