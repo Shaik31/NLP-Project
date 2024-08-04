@@ -3,8 +3,6 @@ pandas
 seaborn
 scikit-learn
 streamlit
-pickle
 cleantext
 time
-matplotlib
 
