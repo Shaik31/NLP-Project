@@ -4,7 +4,7 @@ import streamlit as st
 import time
 #from sklearn.feature_extraction.text import CountVectorizer
 import pickle
-#import cleantext
+import cleantext
 from afinn import Afinn
 afinn = Afinn()
 
@@ -53,11 +53,10 @@ if submit:
 
     sentiment_label, sentiment_color = get_sentiment_label_color(sentiment_score)
     st.write('Sentiment:', f'<span style="color:{sentiment_color}">{sentiment_label}</span>', unsafe_allow_html=True)
-'''
+
 pre = st.text_input('Clean Text: ')
 if pre:
     cleaned_pre = cleantext.clean(pre, clean_all=False, extra_spaces=True,
                                   stemming=True, stopwords=True, lowercase=True, numbers=True, punct=True)
     st.write(cleaned_pre)
 
-'''
