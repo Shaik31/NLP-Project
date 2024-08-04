@@ -8,3 +8,6 @@ WorkFlow
  --Model building
  --Model Evaluation
  --Deployment(streamlit)
+
+
+you can view the project from this link : https://nlp-project-shaikabd31-main.streamlit.app/
